@@ -1,0 +1,66 @@
+html{
+    width: 500px;
+    margin: 0 auto;
+    background-color: hsl(27, 66%, 92%);
+    font-family: 'DM Sans', sans-serif;
+}
+
+
+.top-bal {
+    height: 80px;
+    width: 500px;
+    background-color: hsl(10, 79%, 65%);
+    border-radius: 15px;
+    color: #fff;
+    padding: 5px;
+}
+
+.chart-header {
+    position: fixed;
+    padding: 10px;
+    margin-left: 10px;
+}
+
+.bar-chart {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 25px;
+    height: 300px;
+    width: 500px;
+    background-color: hsl(33, 100%, 98%);
+    padding: 5px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    margin: 10px auto;
+}
+
+.bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50px;
+}
+
+.chart-bar {
+    background-color: hsl(10, 79%, 65%);
+    width: 100%;
+    text-align: center;
+    color: white;
+    border-radius: 5px;
+}
+
+.data-label {
+    margin-top: 5px;
+    color:  hsl(25, 47%, 15%);
+    
+}
+
+.total-month{
+    color: grey;
+}
+.total-amount{
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+}
