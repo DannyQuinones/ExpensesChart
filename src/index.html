@@ -7,63 +7,36 @@
     <title>Expenses Chart</title>
     <link rel="stylesheet" href="./styles/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-<div class="container">
-    <div class="top-bal">
-        <p>My Balance</p>
-        <p>$921.48</p>
+    <div class="nav">
+        <li class="balance-total">My Balance</li>
+        <li class="total">$921.48</li>
+    </div>
+    <div class="chart-design">
+        <canvas id="myChart"></canvas>
     </div>
     
-    <h2 class="chart-header">Spending - Last 7 days</h2>
-    <div class="bar-chart">
-    
-        <div class="bar">
-            <div class="chart-bar" style="height: 40px;"></div>
-            <div class="data-label">Monday</div>
-        </div>
-
-        <div class="bar">
-            <div class="chart-bar" style="height: 90px;"></div>
-            <div class="data-label">Tuesday</div>
-        </div>
-
-        <div class="bar">
-            <div class="chart-bar" style="height: 150px;"></div>
-            <div class="data-label">Wednesday</div>
-        </div>
-
-        <div class="bar">
-            <div class="chart-bar" style="height: 90px;"></div>
-            <div class="data-label">Thursday</div>
-        </div>
-
-        <div class="bar">
-            <div class="chart-bar" style="height: 60px;"></div>
-            <div class="data-label">Friday</div>
-        </div>
-
-        <div class="bar">
-            <div class="chart-bar" style="height: 110px;"></div>
-            <div class="data-label">Saturday</div>
-        </div>
-
-        <div class="bar">
-            <div class="chart-bar" style="height: 50px;"></div>
-            <div class="data-label">Sunday</div>
-        </div>
-    </div>
-    
-    <div class="total-month">
-        <p>Total this month</p>
+    <div class="footer">    
+        <div class="total-month">
+            <p>Total this month</p>
         <p class="total-amount">$478.33</p>
+        </div>
+        <div class="percent">
+            <p>+2.4%</p>
+            <p>from this month</p>
+        </div>
     </div>
-    <div class="percent">
-        <p>+2.4%</p>
-        <p>from this month</p>
-    </div>
-</div>   
+    
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="./script/script.js"></script>
+
 </body>
+
 </html>
