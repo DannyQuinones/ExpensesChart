@@ -1,20 +1,23 @@
 const ctx = document.getElementById('myChart');
 
-new Chart(ctx, {
-  type: 'bar',
-  data: {
-    labels: ['Monday', 'Tuesday', 'Wednesday', 'Thurday', 'Friday', 'Saturday', 'Sunday'],
-    datasets: [{
-      label: 'Spending - Last 7 days',
-      data: [12, 19, 3, 5, 2, 4, 3],
-      borderWidth: 1
-    }]
-  },
-  options: {
-    scales: {
-      y: {
-        beginAtZero: true
+  new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: ['Mon', 'Tues', 'Weds', 'Thur', 'Fri', 'Sat', 'Sun'],
+      datasets: [{
+        label: 'US Dollars',
+        data: [17.45, 34.91, 52.36, 31.07, 23.39, 43.28, 25.48],
+        backgroundColor: 'hsl(10, 79%, 65%)',
+        borderRadius: 5,
+        hoverBackgroundColor: "hsl(186, 34%, 60%)",
+        borderWidth: 1
+      }]
+    },
+    options: {
+      scales: {
+        y: {
+          beginAtZero: true
+        }
       }
     }
-  }
-});
+  });

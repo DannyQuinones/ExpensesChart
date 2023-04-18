@@ -1,56 +1,72 @@
-html{
-  width: 500px;
-  margin: 0 auto;
-  background-color: hsl(27, 66%, 92%);
-  font-family: 'DM Sans', sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap");
+
+* {
+  font-family: "DM Sans", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-
-.nav{
-  height: 75px;
-  width: 500px;
-  background-color: hsl(10, 79%, 65%);
-  border-radius: 15px;
-  color: #fff;
-}
-
-.balance-total{
-  width: 110px;
-  margin: 2px;
-  padding: 5px;
-  list-style-type: none;
-  font-size: 14px;
-  
-}
-
-.total {
-  width: 110px;
-  padding-left: 8px;
-  list-style-type: none;
-  font-weight: 700;
-  font-size: 25px;
-}
-
-
-
-.myChart{
-  height: 500px;
-  width: 500px;
-  border: 1px solid black;
-}
-
-.total-month{
-  color: grey;
-}
-
-.total-amount{
-  font-size: 30px;
-  font-weight: bold;
-  color: black;
-}
-
-.footer{
+body {
   display: flex;
-  justify-content: center;
+  background-color: hsl(27, 66%, 92%);
+  min-height: 100vh;
   align-items: center;
-  gap: 200px;
+  justify-content: center;
+  flex-direction: column;
+}
+.container {
+  width: 350px;
+}
+.top-nav {
+  border-radius: 1rem;
+  background-color: hsl(10, 79%, 65%);
+  padding: 1rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.balance {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.balance p {
+  font-weight: 400;
+}
+.footer {
+  background-color: white;
+  border-radius: 1rem;
+  margin-top: 1rem;
+  padding: 1rem;
+}
+.footer h1 {
+  color: hsl(25, 47%, 15%);
+}
+#myChart {
+  margin: 1rem 0;
+}
+.divider {
+  background-color: hsl(27, 66%, 92%);
+  width: 100%;
+  height: 2px;
+  margin-bottom: 1rem;
+}
+.totals {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.total-month p {
+  color: hsl(28, 10%, 53%);
+}
+.total-month h2 {
+  color: hsl(25, 47%, 15%);
+}
+.last-month p:first-child {
+  font-weight: 700;
+  color: hsl(25, 47%, 15%);
+}
+.last-month p:last-child {
+  color: hsl(28, 10%, 53%);
 }
